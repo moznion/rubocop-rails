@@ -565,6 +565,14 @@ Rails/HttpStatus:
     - numeric
     - symbolic
 
+Rails/HttpUrl:
+  Description: 'Enforces passing a string literal as a URL to http method calls.'
+  Enabled: true
+  VersionAdded: '2.26'
+  Include:
+    - 'spec/**/*'
+    - 'test/**/*'
+
 Rails/I18nLazyLookup:
   Description: 'Checks for places where I18n "lazy" lookup can be used.'
   StyleGuide: 'https://rails.rubystyle.guide/#lazy-lookup'
